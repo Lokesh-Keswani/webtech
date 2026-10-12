@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | StudentHelp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🎓 StudentHelp</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="notices.html">Notices</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div>
+                <span class="hero-badge">STUDENT SUPPORT</span>
+                <h1>
+                    We're here
+                    <span>to help.</span>
+                </h1>
+                <p>
+                    Have a question, suggestion or need help with
+                    something? Send us a message and we'll be happy
+                    to assist you.
+                </p>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="contact-layout">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <span class="section-label">
+                        GET IN TOUCH
+                    </span>
+                    <h2>
+                        Contact the support team.
+                    </h2>
+                    <p>
+                        Use the form to send your query. Please
+                        provide accurate information so that we
+                        can understand your request.
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                📧
+                            </div>
+                            <div>
+                                <span>Email</span>
+                                <strong>
+                                    support@studenthelp.edu
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                📞
+                            </div>
+                            <div>
+                                <span>Phone</span>
+                                <strong>
+                                    +91 98765 43210
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                📍
+                            </div>
+                            <div>
+                                <span>Campus</span>
+                                <strong>
+                                    College Main Campus
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                🕐
+                            </div>
+                            <div>
+                                <span>Support Hours</span>
+                                <strong>
+                                    Monday – Friday, 9 AM – 5 PM
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <span class="section-label">
+                            SEND A MESSAGE
+                        </span>
+                        <h2>
+                            Tell us how we can help.
+                        </h2>
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    Full Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject
+                            </label>
+                            <select
+                                id="subject"
+                                name="subject"
+                                required>
+                                <option value="">
+                                    Select a subject
+                                </option>
+                                <option value="Course Information">
+                                    Course Information
+                                </option>
+                                <option value="Examination">
+                                    Examination
+                                </option>
+                                <option value="Admission">
+                                    Admission
+                                </option>
+                                <option value="Technical Support">
+                                    Technical Support
+                                </option>
+                                <option value="General Query">
+                                    General Query
+                                </option>
+                                <option value="Other">
+                                    Other
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+                        <div class="form-note">
+                            Your submission will be downloaded as an Excel spreadsheet.
+                        </div>
+                        <p id="submissionStatus" class="form-status" role="status" aria-live="polite" hidden></p>
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-submit">
+                            Send Message →
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div id="formPreview" class="success-card" role="status" tabindex="-1" hidden>
+                <button class="confirmation-close" type="button" aria-label="Close confirmation" onclick="showContactForm()">×</button>
+                <h2>Message saved</h2>
+                <p id="savedMessage"></p>
+                <p>Name: <span id="previewName"></span></p>
+                <p>Email: <span id="previewEmail"></span></p>
+                <p>Subject: <span id="previewSubject"></span></p>
+                <p>Message: <span id="previewMessage"></span></p>
+                <button class="btn btn-secondary" type="button" onclick="showContactForm()">Send another message</button>
+            </div>
+        </section>
+        <!-- FAQ / Help -->
+        <section class="section light-section">
+            <div class="section-heading">
+                <span class="section-label">
+                    BEFORE YOU CONTACT US
+                </span>
+                <h2>
+                    Looking for something specific?
+                </h2>
+                <p>
+                    You may find the information you need
+                    in these sections.
+                </p>
+            </div>
+            <div class="quick-grid">
+                <a href="courses.html" class="quick-card">
+                    <div class="card-icon blue">
+                        📘
+                    </div>
+                    <h3>
+                        Course Information
+                    </h3>
+                    <p>
+                        Explore departments and academic programs.
+                    </p>
+                    <span class="card-link">
+                        View Courses →
+                    </span>
+                </a>
+                <a href="notices.html" class="quick-card">
+                    <div class="card-icon orange">
+                        📢
+                    </div>
+                    <h3>
+                        College Notices
+                    </h3>
+                    <p>
+                        Check the latest announcements and updates.
+                    </p>
+                    <span class="card-link">
+                        View Notices →
+                    </span>
+                </a>
+                <a href="about.html" class="quick-card">
+                    <div class="card-icon green">
+                        ℹ️
+                    </div>
+                    <h3>
+                        About StudentHelp
+                    </h3>
+                    <p>
+                        Learn more about the purpose of this portal.
+                    </p>
+                    <span class="card-link">
+                        Learn More →
+                    </span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    🎓 StudentHelp
+                </a>
+                <p>
+                    A simple college student help portal
+                    designed to make information easier to access.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="notices.html">Notices</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 StudentHelp. All rights reserved.
+            </p>
+            <p>
+                College Student Help Portal
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

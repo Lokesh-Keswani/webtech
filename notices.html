@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices | StudentHelp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🎓 StudentHelp</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="notices.html" class="active">Notices</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div>
+                <span class="hero-badge">COLLEGE UPDATES</span>
+                <h1>
+                    Important
+                    <span>notices & announcements.</span>
+                </h1>
+                <p>
+                    Stay updated with examination schedules,
+                    submissions, events and other important
+                    college announcements.
+                </p>
+            </div>
+        </section>
+        <!-- Notices Section -->
+        <section class="section">
+            <div class="section-heading">
+                <span class="section-label">LATEST UPDATES</span>
+                <h2>Stay informed</h2>
+                <p>
+                    Check this section regularly for important
+                    information from the college.
+                </p>
+            </div>
+            <div class="notices-list">
+                <!-- Notice 1 -->
+                <div class="notice-card">
+                    <div class="notice-date">
+                        <strong>15</strong>
+                        <span>OCT</span>
+                    </div>
+                    <div class="notice-info">
+                        <span class="notice-category important">
+                            Examination
+                        </span>
+                        <h3>
+                            Semester examination timetable released
+                        </h3>
+                        <p>
+                            The semester examination timetable has
+                            been released. Students are advised to
+                            check the examination schedule carefully.
+                        </p>
+                        <button
+                            class="text-button"
+                            onclick="showNotice(
+                                'Semester Examination Timetable',
+                                'The semester examination timetable has been released. Students should check their respective examination dates, timings and examination halls carefully. Please contact the college office if you have any questions.'
+                            )">
+                            Read More →
+                        </button>
+                    </div>
+                    <div class="notice-arrow">
+                        →
+                    </div>
+                </div>
+                <!-- Notice 2 -->
+                <div class="notice-card">
+                    <div class="notice-date">
+                        <strong>18</strong>
+                        <span>OCT</span>
+                    </div>
+                    <div class="notice-info">
+                        <span class="notice-category academic">
+                            Academic
+                        </span>
+                        <h3>
+                            Practical record submission deadline
+                        </h3>
+                        <p>
+                            Students are reminded to complete and
+                            submit their practical records before
+                            the announced deadline.
+                        </p>
+                        <button
+                            class="text-button"
+                            onclick="showNotice(
+                                'Practical Record Submission',
+                                'Students must complete their practical records and submit them to their respective subject teachers before the deadline. Make sure all required experiments and observations are properly completed.'
+                            )">
+                            Read More →
+                        </button>
+                    </div>
+                    <div class="notice-arrow">
+                        →
+                    </div>
+                </div>
+                <!-- Notice 3 -->
+                <div class="notice-card">
+                    <div class="notice-date">
+                        <strong>22</strong>
+                        <span>OCT</span>
+                    </div>
+                    <div class="notice-info">
+                        <span class="notice-category event">
+                            Event
+                        </span>
+                        <h3>
+                            Annual student cultural event
+                        </h3>
+                        <p>
+                            The annual student cultural event will
+                            be conducted on campus. Students can
+                            participate in various activities.
+                        </p>
+                        <button
+                            class="text-button"
+                            onclick="showNotice(
+                                'Annual Student Cultural Event',
+                                'The annual student cultural event will include cultural performances, competitions and other student activities. Students interested in participating should contact the event coordinators for registration details.'
+                            )">
+                            Read More →
+                        </button>
+                    </div>
+                    <div class="notice-arrow">
+                        →
+                    </div>
+                </div>
+                <!-- Notice 4 -->
+                <div class="notice-card">
+                    <div class="notice-date">
+                        <strong>25</strong>
+                        <span>OCT</span>
+                    </div>
+                    <div class="notice-info">
+                        <span class="notice-category general">
+                            General
+                        </span>
+                        <h3>
+                            Extended library hours for students
+                        </h3>
+                        <p>
+                            Library operating hours have been
+                            extended during the examination
+                            preparation period.
+                        </p>
+                        <button
+                            class="text-button"
+                            onclick="showNotice(
+                                'Extended Library Hours',
+                                'The college library will remain open for extended hours during the examination preparation period. Students are encouraged to use the additional study time and maintain proper library discipline.'
+                            )">
+                            Read More →
+                        </button>
+                    </div>
+                    <div class="notice-arrow">
+                        →
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Notice Information -->
+        <section class="section light-section">
+            <div class="notice-info-box">
+                <div class="info-box-icon">
+                    📌
+                </div>
+                <div>
+                    <span class="section-label">
+                        IMPORTANT
+                    </span>
+                    <h2>
+                        Check notices regularly
+                    </h2>
+                    <p>
+                        Important academic information can be
+                        announced throughout the semester. Students
+                        should regularly check the notice section
+                        so they do not miss deadlines, examinations
+                        or college events.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="cta-section">
+            <div>
+                <span class="section-label">
+                    HAVE A QUESTION?
+                </span>
+                <h2>
+                    Need clarification about a notice?
+                </h2>
+                <p>
+                    Contact the student support team for assistance.
+                </p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">
+                Contact Support →
+            </a>
+        </section>
+    </main>
+    <!-- Notice Modal -->
+    <div id="noticeModal" class="modal" onclick="closeNotice(event)">
+        <div class="modal-content">
+            <button
+                class="modal-close"
+                onclick="closeNotice(event)">
+                ×
+            </button>
+            <div class="modal-icon">
+                📢
+            </div>
+            <span class="section-label">
+                COLLEGE NOTICE
+            </span>
+            <h2 id="modalTitle">
+                Notice Title
+            </h2>
+            <p id="modalText">
+                Notice details will appear here.
+            </p>
+            <button
+                class="btn btn-primary"
+                onclick="closeNotice(event)">
+                Close
+            </button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    🎓 StudentHelp
+                </a>
+                <p>
+                    A simple college student help portal
+                    designed to make information easier to access.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="notices.html">Notices</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 StudentHelp. All rights reserved.
+            </p>
+            <p>
+                College Student Help Portal
+            </p>
+        </div>
+    </footer>
+    <script src="script.js?v=2"></script>
+</body>
+</html>
